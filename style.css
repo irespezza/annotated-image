@@ -1,0 +1,100 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/* Start your base/mobile styles here */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
+}
+
+/* Tablet/Desktop overrides */
+
+h1, p {
+  text-align: center;
+}
+
+div.hotspot {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+div.hotspot img {
+  width: 100%;
+}
+
+div.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 200%;
+  left: 0;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: top 0.5s ease-in-out;
+}
+
+div.modal.active {
+  top: 0;
+}
+
+div.modal div.inner {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+
+/*without the space it would get both modal and inner*/
+
+.spot {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* what the following stuff means*/
+
+/* top indicates how far the bottom is from the top*/
+
+/* right/left indicates how fart the bottom is from the margins*/
+
+/* background color:you can select your own color from the palette*/
+
+#fact1 {
+  top: 1%;
+  left: 1%;
+  background-color: #ffE4B5;
+}
+
+#fact2 {
+  top: 78%;
+  left: 1%;
+  background-color: #ffbf00;
+}
+
+#fact3 {
+  top: 1%;
+  right: 1%;
+  background-color: #ff8C00;
+}
+
+#fact4 {
+  top: 55%;
+  left: 25%;
+  background-color: #ff9933;
+}
+
+#fact5 {
+  top: 40%;
+  right: 6%;
+  background-color: #b68760;
+}
+
+@media(min-width: 681px) {}
+
+@media(min-width: 729px) {
